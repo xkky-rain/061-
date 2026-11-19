@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>061 徐柯雨</title>
+    <style>
+        @font-face {
+            font-family: "iconfont";
+            src: url('./iconfont.woff') format('woff'),
+            url('./iconfont.ttf') format('truetype');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 26px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .icon-maomi1:before { content: "\e619"; }
+        .icon-maozhaoyin:before { content: "\e6e4"; }
+        .icon-maoliang1:before { content: "\e670"; }
+        .icon-maomi:before { content: "\e61d"; }
+        .main-title{
+            text-align: center;
+            font-size: 28px;
+            color: #ff8aa5;
+            margin-bottom: 30px;
+            font-weight: bold;
+            margin-top: 60px;
+        }
+        .main-title .iconfont{
+            font-size: 36px;
+            color: #ff8aa5;
+            vertical-align: middle;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑";
+        }
+        body{
+             background-image: url(./滑动门背景图片.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .yijihezi {
+             width: 600px;
+             margin: 80px auto 0;
+             padding-left: 200px;
+        }
+
+        .yijiliebiao > li {
+             margin-bottom: 60px;
+             position: relative;
+             width: 120px;
+        }
+
+        .yijiliebiao > li > a {
+             display: block;
+             width: 120px;
+             height: 60px;
+             line-height: 60px;
+             text-align: center;
+             background-color: #ff8aa5;
+             position: relative;
+             top: 0;
+             transition: top 300ms linear,background-color 300ms linear;
+        }
+        .yijiliebiao>li>a:hover{
+            top: 8px;
+            background-color: #c61c46;
+        }
+        .erjihezi {
+             position: absolute;
+             left: 120px;
+             top: 0;
+             background-color: transparent;
+             padding: 0;
+             height: 0;
+             overflow: hidden;
+             transition: height 300ms linear;
+        }
+
+        .erjiliebiao, .erjiliebiao1 {
+             width: 120px;
+             height: 20px;
+        }
+
+        .erjiliebiao li, .erjiliebiao1 li {
+             float: none;
+        }
+
+        .erjiliebiao li a, .erjiliebiao1 li a {
+             display: block;
+             width: 120px;
+             height: 40px;
+             line-height: 40px;
+             text-align: center;
+             background-color: #ffa8bd;
+        }
+
+        .erjiliebiao li a:hover, .erjiliebiao1 li a:hover {
+             background-color: #ff7094;
+        }
+
+        .yijiliebiao > li:hover .erjihezi {
+             height: 140px;
+        }
+        .erjihezi::after{
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: 20px;
+            height: 0;
+        }
+        yijiliebiao>li>a .iconfont{
+            font-size: 20px;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-title"><i class="iconfont icon-maomi"></i>猫咪小百科</h1>
+    <div class="yijihezi">
+       <ul class="yijiliebiao">
+           <li class="pinzhong">
+               <a href="#"><i class="iconfont icon-maomi1"></i>常见品种</a >
+               <div class="erjihezi">
+                   <ul class="erjiliebiao">
+                       <li><a href="#">橘猫</a ></li>
+                       <li><a href="#">布偶猫</a ></li>
+                       <li><a href="#">英短蓝猫</a ></li>
+                   </ul>
+               </div>
+           </li>
+
+            <li class="xixing">
+                <a href="#"><i class="iconfont icon-maozhaoyin"></i>猫咪习性</a >
+                <div class="erjihezi">
+                    <ul class="erjiliebiao1">
+                        <li><a href="#">为什么爱睡觉</a ></li>
+                        <li><a href="#">为什么踩奶</a ></li>
+                        <li><a href="#">为什么爱纸箱</a ></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="yanghu">
+                <a href="#"><i class="iconfont icon-maoliang1"></i>养护小知识</a >
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">怎么喂粮</a ></li>
+                        <li><a href="#">猫砂怎么选</a ></li>
+                        <li><a href="#">绝育与体检</a ></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+</div>
+</body>
+</html>
